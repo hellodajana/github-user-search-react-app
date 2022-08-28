@@ -1,0 +1,45 @@
+@import "light-theme";
+@import "dark-theme";
+@import "_mixins";
+
+.container {
+  margin: 0 24px;
+  @include tablet {
+    margin: 140px 97px;
+  }
+  @include desktop {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 730px;
+    margin: 0px;
+    transform: translate(-50%, -50%);
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin: 31px 0 36px 0;
+  }
+  h1 {
+    color: var(--bold-text);
+  }
+  &__color_mode {
+    display: flex;
+  }
+  &__text {
+    margin-right: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: bold;
+    font-size: 13px;
+  }
+  &__icon {
+    width: 20px;
+    height: 20px;
+  }
+  & #theme:hover {
+    cursor: pointer;
+    color: var(--bold-text);
+    filter: brightness(50%); // make moon icon darker
+  }
+}

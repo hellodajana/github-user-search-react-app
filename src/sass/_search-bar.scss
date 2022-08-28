@@ -1,0 +1,71 @@
+@import "light-theme";
+@import "dark-theme";
+@import "_mixins";
+
+.search-bar {
+  background: var(--container-background);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+  margin-bottom: 16px;
+  @include desktop {
+    margin-bottom: 24px;
+  }
+
+  img {
+    height: 20px;
+    width: 20px;
+    margin: 0px 8.95px 0px 16px;
+  }
+  &__search {
+    display: flex;
+    align-items: center;
+  }
+  &__input {
+    border: none;
+    font-family: "Space Mono", monospace;
+    width: 184px;
+    height: 25px;
+    font-size: 13px;
+    margin-right: 7px;
+    background: transparent;
+    color: var(--text);
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+    @include desktop {
+      width: 680px;
+    }
+    @include tablet {
+      width: 310px;
+    }
+  }
+
+  &__error {
+    display: none;
+    color: red;
+    font-size: 10px;
+  }
+  &__btn {
+    margin-right: 10px;
+    width: 84px;
+    height: 46px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--blue);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Space Mono", monospace;
+    &:hover {
+      cursor: pointer;
+      background-color: #60abff;
+    }
+  }
+}
