@@ -1,0 +1,30 @@
+@import "../mixins";
+
+.user-stats {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  background-color: var(--background);
+  padding: 18px 14px;
+  border-radius: 10px;
+  margin: 23px 0px;
+  @include desktop {
+    margin-left: 126px;
+  }
+  & h4 {
+    font-weight: 400;
+    font-size: 11px;
+    @include tablet {
+      font-size: 13px;
+    }
+  }
+  & h2 {
+    color: var(--bold-text);
+    font-size: 16px;
+    @include tablet {
+      font-size: 22px;
+    }
+  }
+}

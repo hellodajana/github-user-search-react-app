@@ -1,6 +1,4 @@
-@import "light-theme";
-@import "dark-theme";
-@import "_mixins";
+@import "../mixins";
 
 .search-bar {
   background: var(--container-background);

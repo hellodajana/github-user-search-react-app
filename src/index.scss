@@ -1,4 +1,6 @@
-.light {
+@import "./mixins";
+
+:root {
   --blue: hsl(212, 100%, 50%);
   --theme-icon: hsl(217, 20%, 51%);
   --active-theme-icon: hsl(217, 21%, 21%);
@@ -9,7 +11,7 @@
   --background: hsl(227, 100%, 98%);
 }
 
-.dark {
+[data-theme="dark"] {
   --blue: hsl(212, 100%, 50%);
   --theme-icon: hsl(0, 0%, 10%);
   --active-theme-icon: #90a4d4;
@@ -18,4 +20,21 @@
   --stats-menu: hsl(220, 40%, 13%);
   --container-background: hsl(222, 41%, 20%);
   --background: hsl(220, 40%, 13%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  background-color: var(--background);
+  color: var(--text);
+  font-size: 13px;
+  line-height: 25px;
+  @include tablet {
+    font-size: 15px;
+  }
 }
