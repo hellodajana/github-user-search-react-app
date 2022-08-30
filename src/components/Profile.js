@@ -17,11 +17,6 @@ const Profile = ({
   company,
   location,
 }) => {
-  // let hero = { noAvatar };
-  // if (avatar.length) {
-  //   hero = avatar[0];
-  // }
-
   return (
     <div className="container-profile">
       <section className="container-profile__header">
@@ -39,7 +34,7 @@ const Profile = ({
               {user}
             </p>
             <div className="container-profile__date" id="date">
-              Joined {date}
+              {date}
             </div>
           </div>
           <p className="container-profile__bio" id="bio">
