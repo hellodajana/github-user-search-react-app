@@ -61,6 +61,7 @@ const SearchBar = () => {
           blog={usernameAPI.blog}
           twitter={usernameAPI.twitter_username}
           company={usernameAPI.company}
+          location={usernameAPI.location}
         />
       </div>
     </main>

@@ -43,8 +43,7 @@ const Profile = ({
             </div>
           </div>
           <p className="container-profile__bio" id="bio">
-            {bio}
-            {/* {bio !== null ? bio : "This profile has no bio"} */}
+            {bio !== null ? bio : "This profile has no bio"}
           </p>
         </header>
       </section>
