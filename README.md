@@ -19,7 +19,6 @@ Users should be able to:
 ### Continued development
 
 - Have the correct color scheme chosen for them based on their computer preferences, using Research prefers-color-scheme in CSS.
-- If a GitHub user's bio is empty, or any of the location, website, twitter, or company properties are location, website, twitter, or company properties are empty, show the text "This profile has no bio" / "Not Available" with transparency added.
 
 ### Built with
 
