@@ -35,7 +35,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Links
 
-- Live Site URL: [Netlify](https://hellodajana-github-user-search.netlify.app/)
+- Live Site URL: [Netlify](https://hellodajana-user-search-react-app.netlify.app/)
 
 ### Getting Started
 
