@@ -28,16 +28,16 @@ const Profile = ({
           ></div>
           <div className="container-profile__name">
             <h2 className="username" id="github-name">
-              {name}
+              {name !== null ? name : user}
             </h2>
             <p className="githubusername" id="github-user">
-              {user}
+              @{user}
             </p>
             <div className="container-profile__date" id="date">
               {date}
             </div>
           </div>
-          <p className="container-profile__bio" id="bio">
+          <p className="container-profile__bio transparent" id="bio">
             {bio !== null ? bio : "This profile has no bio"}
           </p>
         </header>

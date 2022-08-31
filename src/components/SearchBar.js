@@ -51,7 +51,7 @@ const SearchBar = () => {
         </form>
         <Profile
           name={usernameAPI.name}
-          user={`@${usernameAPI.login}`}
+          user={usernameAPI.login}
           avatar={usernameAPI.avatar_url}
           date={usernameAPI.created_at}
           bio={usernameAPI.bio}
