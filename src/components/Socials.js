@@ -5,7 +5,7 @@ import iconTwitter from "../assets/icon-twitter.svg";
 import iconCompany from "../assets/icon-company.svg";
 
 const Socials = ({ location, blog, twitter, company }) => {
-  const emptyText = "Not Available";
+  const emptyText = <span className="opacity">Not Available</span>;
   return (
     <section className="container-profile__socials">
       <div className="social-icons row-1">

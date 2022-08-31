@@ -1,7 +1,6 @@
 import Stats from "./Stats";
 import Socials from "./Socials";
 import "./Profile.scss";
-// import noAvatar from "../assets/illustration-empty.svg";
 
 const Profile = ({
   name,
@@ -17,6 +16,7 @@ const Profile = ({
   company,
   location,
 }) => {
+  const emptyText = <span className="opacity">This profile has no bio</span>;
   return (
     <div className="container-profile">
       <section className="container-profile__header">
@@ -37,8 +37,11 @@ const Profile = ({
               {date}
             </div>
           </div>
-          <p className="container-profile__bio transparent" id="bio">
-            {bio !== null ? bio : "This profile has no bio"}
+          <p
+            className="container-profile__bio transparent not-transperent"
+            id="bio"
+          >
+            {bio !== null ? bio : emptyText}
           </p>
         </header>
       </section>
