@@ -25,7 +25,10 @@ const Profile = ({
             id="avatar"
             className="container-profile__avatar"
             alt="GitHub Avatar"
-          ></div>
+          >
+            <img src={avatar} alt="" />
+          </div>
+
           <div className="container-profile__name">
             <h2 className="username" id="github-name">
               {name !== null ? name : user}
