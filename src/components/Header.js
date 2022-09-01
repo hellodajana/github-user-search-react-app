@@ -4,17 +4,6 @@ import moon from "../assets/icon-moon.svg";
 import sun from "../assets/icon-sun.svg";
 
 const Header = ({ theme, toggleTheme }) => {
-  // const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  // const [theme, setTheme] = useLocalStorage(
-  //   "theme",
-  //   defaultDark ? "dark" : "light"
-  // );
-
-  // const toggleTheme = () => {
-  //   const newTheme = theme === "light" ? "dark" : "light";
-  //   setTheme(newTheme);
-  // };
-
   return (
     <div className="container">
       <header className="header">

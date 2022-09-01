@@ -1,20 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.scss";
 import Header from "./components/Header";
 import SearchBar from "./components/SearchBar";
-import Theme from "./components/Theme";
-import GlobalStyles from "./components/GlobalStyles";
+import { createContext } from "react";
 
+const ThemeContext = createContext("light");
 function App() {
-  const [theme, toggleTheme] = Theme();
+  const [theme, setTheme] = useState("light");
+  const toggleTheme = () => {
+    setTheme((curr) => (curr === "light" ? "dark" : "light"));
+  };
   return (
-    <div className="App">
-      <GlobalStyles data-theme={theme} />
-      <div className="container">
-        <Header theme={theme} toggleTheme={toggleTheme} />
-        <SearchBar />
+    <ThemeContext.Provider value={{ toggleTheme }}>
+      <div className="App" id={theme}>
+        <div className="container">
+          <Header theme={theme} toggleTheme={toggleTheme} />
+          <SearchBar />
+        </div>
       </div>
-    </div>
+    </ThemeContext.Provider>
   );
 }
 

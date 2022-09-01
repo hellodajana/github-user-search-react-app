@@ -1,0 +1,23 @@
+#light {
+  --blue: hsl(212, 100%, 50%);
+  --theme-icon: hsl(217, 20%, 51%);
+  --active-theme-icon: hsl(217, 21%, 21%);
+  --text: hsl(217, 35%, 45%);
+  --bold-text: hsl(217, 21%, 21%);
+  --stats-menu: hsl(227, 100%, 98%);
+  --container-background: hsl(0, 0%, 100%);
+  --background: hsl(227, 100%, 98%);
+  --shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+}
+
+#dark {
+  --blue: hsl(212, 100%, 50%);
+  --theme-icon: hsl(0, 0%, 10%);
+  --active-theme-icon: #90a4d4;
+  --text: hsl(0, 0%, 100%);
+  --bold-text: hsl(0, 0%, 100%);
+  --stats-menu: hsl(220, 40%, 13%);
+  --container-background: hsl(222, 41%, 20%);
+  --background: hsl(220, 40%, 13%);
+  --shadow: 0;
+}

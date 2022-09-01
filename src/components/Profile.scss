@@ -1,10 +1,11 @@
 @import "../mixins";
+@import "../colors.scss";
 
 .container-profile {
   background: var(--container-background);
   border-radius: 15px;
   padding: 32px 24px 48px 24px;
-  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+  box-shadow: var(--shadow);
   @include tablet {
     padding: 40px;
   }
