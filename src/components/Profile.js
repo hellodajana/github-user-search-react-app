@@ -17,6 +17,28 @@ const Profile = ({
   location,
 }) => {
   const emptyText = <span className="opacity">This profile has no bio</span>;
+  const newDate = (currentDate) => {
+    const months = [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec",
+    ];
+    const format = currentDate.split("T").shift().split("-");
+    const day = format[2];
+    const month = format[1];
+    const year = format[0];
+    const formattedDate = `Joined ${day} ${months[month - 1]} ${year} `;
+    return formattedDate;
+  };
   return (
     <div className="container-profile">
       <section className="container-profile__header">
@@ -37,7 +59,7 @@ const Profile = ({
               @{user}
             </p>
             <div className="container-profile__date" id="date">
-              {date}
+              {date !== undefined ? newDate(date) : date}
             </div>
           </div>
           <p
