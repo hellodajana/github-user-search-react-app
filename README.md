@@ -18,7 +18,8 @@ Users should be able to:
 
 ### Continued development
 
-- Have the correct color scheme chosen for them based on their computer preferences, using Research prefers-color-scheme in CSS.
+- Fix input background
+- Display "No result" if user is not found
 
 ### Built with
 
