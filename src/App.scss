@@ -10,7 +10,12 @@
 .container {
   margin: 0 24px;
   @include tablet {
-    margin: 140px 97px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 550px;
+    margin: 0px;
+    transform: translate(-50%, -50%);
   }
   @include desktop {
     position: absolute;

@@ -5,7 +5,7 @@ import sun from "../assets/icon-sun.svg";
 
 const Header = ({ theme, toggleTheme }) => {
   return (
-    <div className="container">
+    <div>
       <header className="header">
         <h1>devfinder</h1>
         <div className="header__color-mode" id="theme" onClick={toggleTheme}>
