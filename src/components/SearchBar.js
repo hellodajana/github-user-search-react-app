@@ -11,6 +11,7 @@ const SearchBar = () => {
     const api_link = `https://api.github.com/users/${username}`;
     const res = await fetch(api_link, { catche: "no-catche" });
     const json = await res.json();
+
     setUsernameAPI(json);
   }
 
@@ -32,7 +33,8 @@ const SearchBar = () => {
               id="github-username"
               name="GitHub username"
               value={username}
-              //   onFocus=""
+              spellCheck="false"
+              // autocomplete="off"
               placeholder="Search GitHub username..."
               onChange={(e) => {
                 setUsername(e.target.value);
@@ -41,11 +43,16 @@ const SearchBar = () => {
                 setUsername(e.target.value);
               }}
             />
+
             <p className="search-bar__error hidden" id="search-error">
-              No results
+              No result
             </p>
           </div>
-          <button className="search-bar__btn" type="submit" id="submit-btn">
+          <button
+            className="search-bar__btn hidden"
+            type="submit"
+            id="submit-btn"
+          >
             Search
           </button>
         </form>

@@ -18,7 +18,6 @@ Users should be able to:
 
 ### Continued development
 
-- Fix input background
 - Display "No result" if user is not found
 
 ### Built with

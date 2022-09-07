@@ -17,6 +17,7 @@ const Profile = ({
   location,
 }) => {
   const emptyText = <span className="opacity">This profile has no bio</span>;
+
   const newDate = (currentDate) => {
     const months = [
       "Jan",
