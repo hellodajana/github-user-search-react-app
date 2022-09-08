@@ -9,7 +9,7 @@ const SearchBar = () => {
 
   useEffect(() => {
     requestProfile(username);
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   async function requestProfile() {
     const api_link = `https://api.github.com/users/${username}`;
