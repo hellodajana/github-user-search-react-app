@@ -39,6 +39,7 @@ const SearchBar = () => {
               value={username}
               spellCheck="false"
               // autocomplete="off"
+              onFocus={(e) => (e.target.value = "")}
               placeholder="Search GitHub username..."
               onChange={(e) => {
                 setUsername(e.target.value);
