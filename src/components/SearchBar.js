@@ -1,11 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./SearchBar.scss";
 import searhIcon from "../assets/icon-search.svg";
 import Profile from "./Profile";
 
 const SearchBar = () => {
-  const [username, setUsername] = useState("");
+  const [username, setUsername] = useState("octocat");
   const [usernameAPI, setUsernameAPI] = useState([]);
+
+  useEffect(() => {
+    requestProfile(username);
+  }, []);
 
   async function requestProfile() {
     const api_link = `https://api.github.com/users/${username}`;
